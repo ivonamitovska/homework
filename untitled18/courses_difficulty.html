@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .language_div {
+          width: 200px;
+          height: 200px;
+          background-color: #f3eac0;
+        }
+        ul {
+  list-style: none;
+  padding-left: 0;
+}
+li {
+    font-size: x-large;
+  position: relative;
+  padding-left: 1.5em;  /* space to preserve indentation on wrap */
+}
+li:before {
+  content: '';  /* placeholder for the SVG */
+  position: absolute;
+  left: 0;  /* place the SVG at the start of the padding */
+  width: 1em;
+  height: 1em;
+  background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='18' height='18' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>") no-repeat;
+}
+       </style>
+</head>
+<body>
+    <script>
+        $(".backButton").on("click", function(e){
+            e.preventDefault();
+            window.history.back();
+        });
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light pl-5 pr-5" style="background-color: #ffd89d;">
+        <a style="float: left; height: 45px; padding: 12px 12px; font-size: 22px; line-height: 20px;" class="backButton text-white" href="index.html">
+            <span class="glyphicon glyphicon-arrow-left"></span>
+        </a>
+    </nav>
+
+      <div class="container h-100 mt-5 pt-1">
+        <div class="row align-items-center h-100">
+        <div class="col-md-6">
+            <h2>Choose level which you want to learn</h2>
+            <!-- <form action="/action_page.php">
+                <input type="radio" id="basic" name="basic" value="basic">
+                <label for="html">Basic level</label><br>
+                <input type="radio" id="intermediate" name="intermediate" value="intermediate">
+                <label for="css">Intermediate level</label><br>
+                <input type="radio" id="upper" name="upper" value="upper">
+                <label for="javascript">Upper-intermediate level</label><br>
+                <input type="radio" id="advanced" name="advanced" value="advanced">
+                <label for="javascript">Advanced level</label>
+                <br>  
+                <input type="submit" value="Submit">
+              </form> -->
+              <form action="/action_page.php">
+                <p>Please select your favorite Web language:</p>
+                <input type="radio" id="Basic" name="difficulty" value="Basic">
+                <label for="Basic">Basic level</label><br>
+                <input type="radio" id="Intermediate" name="difficulty" value="Intermediate">
+                <label for="Intermediate">Intermediate level</label><br>
+                <input type="radio" id="upper" name="difficulty" value="upper">
+                <label for="upper">Upper-intermediate level</label><br>
+                <input type="radio" id="advanced" name="difficulty" value="advanced">
+                <label for="advanced">Advanced level</label>
+                <br>
+                <a href="courses_data.html" class="btn btn-primary">NEXT</a>
+              </form>
+        </div>
+        <div class="col-md-6 d-flex justify-content-md-around">
+            <div>
+                <div class="span12 p-5 rounded" style="background-color: #ffd89d;">
+                    <div class="inside text-center p-5">
+                        <h3>LEARNING THROUGH:</h3>
+                        <ul>
+                            <li>videos</li>
+                            <li>writing and listening</li>
+                            <li>quizes</li>
+                            <li>homework</li>
+                            <li>lectures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>             
+        </div>
+    </div>
+    
+
+</div>
+
+</body>
+</html>
